@@ -1,0 +1,8 @@
+[package]
+name = "bevy_panic"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { workspace = true }
+rfd = { workspace = true }
