@@ -11,7 +11,7 @@ fn main() {
             primary_window: Some(Window {
                 present_mode: PresentMode::AutoVsync,
                 mode: WindowMode::BorderlessFullscreen(MonitorSelection::Primary),
-                name: Some("name".to_string()),
+                name: Some("factory game".to_string()),
                 ..default()
             }),
             ..default()

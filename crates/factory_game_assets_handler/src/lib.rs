@@ -7,7 +7,7 @@ impl Plugin for TilePlugin {
     fn build(&self, app: &mut App) {
         app.init_state::<GameState>();
         app.add_loading_state(
-            LoadingState::new(GameState::Loading).continue_to_state(GameState::Next),
+            LoadingState::new(GameState::Loading).continue_to_state(GameState::Menu),
         );
     }
 }
@@ -16,5 +16,5 @@ impl Plugin for TilePlugin {
 pub enum GameState {
     #[default]
     Loading,
-    Next,
+    Menu,
 }
