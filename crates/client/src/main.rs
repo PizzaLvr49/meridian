@@ -1,6 +1,9 @@
+#![cfg_attr(not(feature = "dev"), windows_subsystem = "windows")]
+
 use bevy::prelude::*;
 use bevy::window::{PresentMode, WindowMode};
 use bevy_panic::PanicHandler;
+use factory_game_assets_handler::TilePlugin;
 
 fn main() {
     App::new()
@@ -14,5 +17,6 @@ fn main() {
             ..default()
         }))
         .add_plugins(PanicHandler::default())
+        .add_plugins(TilePlugin)
         .run();
 }
