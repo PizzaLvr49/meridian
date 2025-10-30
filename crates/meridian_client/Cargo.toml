@@ -1,0 +1,13 @@
+[package]
+name = "meridian-client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { workspace = true }
+bevy_panic = { workspace = true }
+meridian_assets_handler = { workspace = true }
+
+[features]
+default = []
+dev = ["bevy/dynamic_linking"]

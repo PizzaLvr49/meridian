@@ -3,7 +3,7 @@
 use bevy::prelude::*;
 use bevy::window::{PresentMode, WindowMode};
 use bevy_panic::PanicHandler;
-use factory_game_assets_handler::TilePlugin;
+use meridian_assets_handler::TilePlugin;
 
 fn main() {
     App::new()
