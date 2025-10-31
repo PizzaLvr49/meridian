@@ -3289,11 +3289,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "meridian-state"
+version = "0.1.0"
+dependencies = [
+ "bevy",
+]
+
+[[package]]
 name = "meridian_assets_handler"
 version = "0.1.0"
 dependencies = [
  "bevy",
  "bevy_asset_loader",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]

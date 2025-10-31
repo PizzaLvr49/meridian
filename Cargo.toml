@@ -10,10 +10,8 @@ bevy_enhanced_input = "0.19.1"
 bevy_rand = { version = "0.12.1", features = ["wyrand"] }
 rand = "0.9.2"
 rfd = "0.15.4"
-bevy_gearbox = "0.4.0"
-bevy_gearbox_editor = "0.4.2"
-bevy_egui = "0.37.0"
-
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 bevy_panic = { path = "crates/bevy_panic" }
 meridian_assets_handler = { path = "crates/meridian_assets_handler" }
