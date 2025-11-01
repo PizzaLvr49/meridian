@@ -1,0 +1,5 @@
+TileData (
+    name: "Conveyer",
+    health: 100,
+    size: (1, 1),
+)
