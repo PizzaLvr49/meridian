@@ -3,7 +3,7 @@
 use bevy::prelude::*;
 use bevy::window::{PresentMode, WindowMode};
 use bevy_panic::PanicHandler;
-use meridian_assets_handler::{AssetLoadingState, AssetPlugin, ImageAssets, PlayerAsset};
+use meridian_assets_handler::{AssetLoadingState, AssetPlugin, ImageAssets};
 
 fn main() {
     App::new()
@@ -22,16 +22,6 @@ fn main() {
         .run();
 }
 
-fn spawn_player(
-    mut commands: Commands,
-    image_assets: Res<ImageAssets>,
-    player_assets: Res<Assets<PlayerAsset>>,
-) {
-    if let Some(player_asset) = player_assets.get(&image_assets.player) {
-        commands.spawn(Sprite::from_image(player_asset.image.clone()));
-
-        println!("Player name: {}", player_asset.metadata.name);
-        println!("Player health: {}", player_asset.metadata.health);
-        println!("Player speed: {}", player_asset.metadata.speed);
-    }
+fn spawn_player(mut commands: Commands, image_assets: Res<ImageAssets>) {
+    commands.spawn(Sprite::from_image(image_assets.player.clone()));
 }
